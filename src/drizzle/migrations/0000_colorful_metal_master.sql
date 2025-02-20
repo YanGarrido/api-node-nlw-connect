@@ -3,6 +3,5 @@ CREATE TABLE "subscriptions" (
 	"name" text NOT NULL,
 	"email" text NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
-	CONSTRAINT "subscriptions_name_unique" UNIQUE("name"),
 	CONSTRAINT "subscriptions_email_unique" UNIQUE("email")
 );
